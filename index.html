@@ -4,8 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário</title>
+  <link rel="shortcut icon" type="imagex/png" href="Mirela-Ferraz.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </head>
 <body>
+  <div class="container">
+    <h2 id="titulo">Fomulário de cadastro</h1>
+    <form id="form">
+      <div class="nomeCadastro">
+        <label for="nome">Nome</label>
+        <input type="text" name="" id="nome" placeholder="Ex: Maria Silva">
+      </div>
+
+      <div class="emailCadastro">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email@exemplo.com" >
+      </div>
+
+      <div class="telefoneCadastro">
+        <label for="celular">Celular</label>
+        <input type="text" id="celular" placeholder="83 911223344" >
+    </div>
+
+    <button type="submit" class="btn" id="enviarBtn" onclick="enviarForm()">Enviar</button>
+    
+    </form>
+  </div>
+
+  <div class="foto" id="foto">
+    <div class="mensagem">
+      <p class="text">Obrigado por seu cadastro!</p>
+    </div>
+    <img id="welcome" src="welcome.png" alt="foto-de-bem-vindo">
+  </div>
+ 
   
+  <script src="index.js"></script>
 </body>
+<footer>
+  <div class="autoria">
+    <p class="footer">Desenvolvido por Mirela Ferraz <img id="mf" src="Mirela-Ferraz.ico" alt=""></p>
+  </div>
+</footer>
 </html>
